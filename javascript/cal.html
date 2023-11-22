@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script type="text/javascript">
+    function multiply(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a*b;
+      document.my_cal.total.value=c;
+    }
+
+    function addition(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a+b;
+      document.my_cal.total.value=c;
+    }
+
+
+    function subtraction(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a-b;
+      document.my_cal.total.value=c;
+    }
+
+
+    function division(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a/b;
+      document.my_cal.total.value=c;
+    }
+  </script>
+
+
+  <form name="my_cal">
+
+    Enter 1st number: <input type="text" name="first">
+    
+
+    Enter 2nd Number: <input type="text" name="second">
+
+    <br><br>
+
+    <input type="button" value="+" onclick="javascript:addition();">
+    <input type="button" value="-" onclick="javascript:subtraction();">
+    <input type="button" value="x" onclick="javascript:multiply();">
+    <input type="button" value="/" onclick="javascript:division();">
+   
+    <br><br>
+
+    
+    Total: <input type="text" name="total">
+
+  </body>
+  </html>
